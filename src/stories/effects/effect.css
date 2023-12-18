@@ -18,5 +18,4 @@
 
 .title {
     @apply font-bold text-gray-900 bg-red-500;
-    background-color: #66bf3c;
 }
