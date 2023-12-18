@@ -2,6 +2,8 @@
     display: inline-block;
     margin-left: 5px;
     animation: blink 1s step-end infinite;
+    background: #66bf3c;
+    @apply bg-amber-600
 }
 
 @keyframes blink {
@@ -11,4 +13,10 @@
     50% {
         color: black;
     }
+}
+
+
+.title {
+    @apply font-bold text-gray-900 bg-red-500;
+    background-color: #66bf3c;
 }

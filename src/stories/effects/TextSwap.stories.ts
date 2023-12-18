@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react';
 import TextSwap from "./TextSwap.tsx";
-
+import {textSwapData} from "../../data";
 
 const meta = {
     title: 'Effects/TextSwap',
@@ -10,10 +10,12 @@ const meta = {
     },
     tags: ['autodocs'],
     argTypes: {
-        text: { control: {
-            type: 'array',
-                options: ['Hello', 'World'],
-            } },
+        textArray: {
+            control: {
+                type: 'array',
+                options: textSwapData
+            }
+        },
     },
 } satisfies Meta<typeof TextSwap>;
 
@@ -22,7 +24,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        text: ['Hello', 'World']
+        textArray: textSwapData,
+
     },
 };
 

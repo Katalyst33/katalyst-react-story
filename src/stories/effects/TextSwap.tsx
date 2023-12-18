@@ -1,10 +1,17 @@
 import  { useState, useEffect, useRef } from 'react';
 import './effect.css'
 
-function TextSwap() {
+
+type TextSwapProps = {
+    textArray: string[];
+}
+
+function TextSwap({ textArray }: TextSwapProps) {
+
+    // const words = textArray || [];
+    const words =  textArray
 
 
-    const words = ["No Premine", "No ICOs", "No VC", "Fair Launch"];
     const [typedWord, setTypedWord] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [wordIndex, setWordIndex] = useState(0);
@@ -38,11 +45,14 @@ function TextSwap() {
 
     return (
         <div className="text-4xl font-semibold tracking-tight sm:text-6xl" id="word-container">
+
+            <h1 className="title">
+                Hello world!
+            </h1>
+
             {firstPart && <span className="text-gray-200 px-2">{firstPart}</span>}
             {secondPart && <span className="text-primary-500">{secondPart}</span>}
             <span className="cursor">|</span>
-
-
         </div>
     );
 }
