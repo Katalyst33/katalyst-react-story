@@ -1,6 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 
-import "../src/assets/styles/index.css";
+// import "../src/assets/styles/index.css";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],

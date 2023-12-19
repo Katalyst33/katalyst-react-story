@@ -1,1 +1,1 @@
-export const textSwapData =    ["Hello World", "React is Awesome", "Props are Useful", "Coding is Fun"]
+export const textSwapData =    ["No Premine", "No ICOs", "No VC", "Fair Launch"]

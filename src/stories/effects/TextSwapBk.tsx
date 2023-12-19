@@ -48,9 +48,6 @@ function TextSwap({ textArray }: TextSwapProps) {
     return (
         <div className="text-4xl font-semibold tracking-tight sm:text-6xl" id="word-container">
 
-            <h1 className="text-red-500">
-                Hello world!
-            </h1>
 
             {firstPart && <span className="text-gray-200 px-2">{firstPart}</span>}
             {secondPart && <span className="text-primary-500">{secondPart}</span>}
